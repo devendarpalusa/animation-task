@@ -5,63 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
- div { 
-    padding:20px;
-    position:absolute;
-    border:2px;
-top: -140px;
-margin-left: 340px;
-overflow:hidden;
-border-radius:50%;
-animation: rotate 10s infinite;
-animation-direction: normal ;
+#sk{  width:500px; height:150px;
+border:1px solid;
+border-radius:30%;
 
-  }
-  
-  span{ width:1px;
-    padding:2px;
-  height:30px;
-  border:2px;
-  margin:1px;
-  text-align: center;
-  display:inline-block;
-  color:aqua;
-  line-height: 20px;
-  animation: upanddown 2s linear infinite normal;
-
-  
 }
-@keyframes upanddown{
+div{ background-color:red; 
+display:inline-block;
+width:20px;
+margin-top:400px;
+border: 5px;
+height:20px;
+border:1px solid;
+border-radius: 49%;
+margin-left:80px;
+animation:example 2s linear 2s infinite normal;
+position:relative;}
 
- 0% { color:red;background-color: green; margin-top:100px; }
- 50%{  color:yellow;background-color: blueviolet; margin-bottom:0px;}
- 100%{ color:brown; background-color: blanchedalmond; margin-top:50px;}
+@keyframes example {    
+  0%{ background-color:aqua;margin-top:50px;}
+100%{ background-color: black; margin-top:100px;}
+
 }
-div span nth child(evenchild){ 
-  
-  animation:  upanddown 1s linear infinite normal;}
-div span nth child(oddchild){  animation:  1s linear infinite reverse;}
-
   </style>
 </head>
 <body>
-  <h1 style="background-color: brown; margin-right:200px; ">pusha the rise</h1>
+  <h1 style="background-color: brown;text-align: center; ">pushpa the rise</h1>
   
   <hr>
-<video controls muted autoplay>
-<source src="./Dakko Dakko Meka.mp3">
+<audio controls muted autoplay>
+<source src=".">
 
-</video>
-<a href="animation.html" play><button style=" color: blueviolet;">play</button></a><br>
+</audio>
+<button style=" color:blueviolet;">play</button><br>
 
-  <div style="margin-top:300px; left:60px;">
-   <span>h</span>
-   <span>h</span> 
-   <span>h</span>
-    <span>h</span> 
-   <span>h</span>
-    <span>h</span>
+  <div id="sk">
+   <div ></div>
+   <div ></div>
+   <div ></div>
+   <div></div>
+   
     
-  </div>
+</div>
 </body>
 </html>
